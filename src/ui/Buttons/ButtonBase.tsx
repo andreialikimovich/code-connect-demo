@@ -21,9 +21,9 @@ export interface ButtonBaseIconsProps {
    */
   ariaLabel?: string;
   /**
-   * React children
+   * React buttonLabel
    */
-  children: ReactNode;
+  buttonLabel: string;
   /**
    * The icon following the text
    */
@@ -156,7 +156,7 @@ export const ButtonBase = ({
       classNames.push("button-base-icon-start");
       contents.push(props.iconStart);
     }
-    contents.push(props.children);
+    contents.push(props.buttonLabel);
     if (props.iconEnd) {
       classNames.push("button-base-icon-end");
       contents.push(props.iconEnd);
